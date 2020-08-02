@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
  * ThreadLocal 每个线程独享一个对象（多数为工具类，非线程安全）
  */
 public class ThreadLocalDemo01 {
-
     public static ExecutorService threadPool = Executors.newFixedThreadPool(10);
 
     public String date(int seconds) {

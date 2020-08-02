@@ -45,4 +45,5 @@ public class Offer32 {
             return res;
         }
     }
+
 }

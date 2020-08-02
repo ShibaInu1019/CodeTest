@@ -2,8 +2,10 @@ package BiShe;
 
 import java.util.Arrays;
 
-public class Test01_0716 {
-
+/**
+ * 西安立辰远景
+ */
+public class Test_0716 {
 
     public static int[] func1(int[][] order_list, int n) {
         // write code here
@@ -81,7 +83,7 @@ public class Test01_0716 {
 
     public static void main(String[] args) {
         int[][] order_list = {{2, 4, 10}, {0, 3, 15}, {3, 4, 21}};
-        int res[] = Test01_0716.func1(order_list, 6);
+        int res[] = Test_0716.func1(order_list, 6);
         System.out.println(Arrays.toString(res));
     }
 }
