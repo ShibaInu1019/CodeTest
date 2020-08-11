@@ -16,31 +16,23 @@ public class QuickSort {
 
         while (i < j) {
             //从右往左查找比x小的数
-            while (i < j && nums[j] >= x)
+            while (i < j && nums[j] > x)
                 j--;
             //进入if的条件是nums[j]<x
-            if (i < j) {
-                //填nums[i]的坑，之后nums[j]就会空出来
-                nums[i] = nums[j];
-                i++;
-            }
+            //填nums[i]的坑，之后nums[j]就会空出来
+            nums[i] = nums[j];
 
             //从左往右查找比x大的数
-            while (i < j && nums[i] <= x)
+            while (i < j && nums[i] < x)
                 i++;
             //进入if的条件是nums[i]>=x
-            if (i < j) {
-                //填nums[j]的坑，之后nums[i]就会空出来
-                nums[j] = nums[i];
-                j--;
-            }
+            //填nums[j]的坑，之后nums[i]就会空出来
+            nums[j] = nums[i];
         }
         //最后再将最初的基准x放入nums[i]
         nums[i] = x;
-
         //递归左边部分
         Quick_Sort(nums, left, i - 1);
-
         //递归右边部分
         Quick_Sort(nums, i + 1, right);
     }

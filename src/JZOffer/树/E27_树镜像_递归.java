@@ -1,6 +1,6 @@
-package JZOffer;
+package JZOffer.树;
 
-public class E27_tree {
+public class E27_树镜像_递归 {
 
     public class TreeNode {
         int val;

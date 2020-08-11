@@ -1,8 +1,8 @@
-package JZOffer;
+package JZOffer.链表;
 
 import javax.xml.soap.Node;
 
-public class E18_linkedlist {
+public class E18_删除链表节点_哨兵 {
 
 
     public class ListNode {

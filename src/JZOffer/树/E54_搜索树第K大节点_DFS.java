@@ -1,9 +1,9 @@
-package JZOffer;
+package JZOffer.树;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class E54_tree {
+public class E54_搜索树第K大节点_DFS {
 
     public class TreeNode {
         int val;
@@ -37,4 +37,28 @@ public class E54_tree {
         bst(root.left, list);
     }
 
+    /**
+     * DFS中序遍历（从大到小）
+     */
+    int res, k;
+
+    public int kthLargest_(TreeNode root, int k) {
+        if (root == null)
+            return 0;
+        this.k = k;
+        DFS(root);
+        return res;
+    }
+
+    private void DFS(TreeNode root) {
+        if (root == null)
+            return;
+        DFS(root.right);
+        //已经找到res，提前返回
+        if (k == 0)
+            return;
+        if (--k == 0)
+            res = root.val;
+        DFS(root.left);
+    }
 }

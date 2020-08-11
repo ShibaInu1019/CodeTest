@@ -1,6 +1,10 @@
-package JZOffer;
+package JZOffer.链表;
 
-public class E52_linkedlist {
+/**
+ * c为公共段
+ * a+c+b = b+c+a;
+ */
+public class E52_相交链表 {
 
 
     public class ListNode {
@@ -22,14 +26,8 @@ public class E52_linkedlist {
 
         //如果ab不相交
         while (a != b) {
-            if (a != null)
-                a = a.next;
-            else
-                a = headB;
-            if (b != null)
-                b = b.next;
-            else
-                b = headA;
+            a = a != null ? a.next : headB;
+            b = b != null ? b.next : headA;
         }
         return a;
     }

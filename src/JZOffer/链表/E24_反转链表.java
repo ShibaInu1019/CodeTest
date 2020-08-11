@@ -1,6 +1,6 @@
-package JZOffer;
+package JZOffer.链表;
 
-public class E24_linkedlist {
+public class E24_反转链表 {
     public class ListNode {
         int val;
         ListNode next;
