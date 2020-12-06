@@ -9,6 +9,7 @@ public class E06_反转链表返回数组 {
     public class ListNode {
         int val;
         ListNode next;
+
         ListNode(int x) {
             val = x;
         }

@@ -11,6 +11,7 @@ public class FutureDemo01 {
         System.out.println(future.get());
         service.shutdown();
     }
+
     static class CallableTask implements Callable {
 
         @Override

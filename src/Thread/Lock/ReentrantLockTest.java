@@ -24,6 +24,6 @@ public class ReentrantLockTest {
     }
 
     public static void main(String[] args) {
-            ReentrantLockTest.accessResource();
+        ReentrantLockTest.accessResource();
     }
 }

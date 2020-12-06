@@ -34,7 +34,7 @@ public class CalTest {
         }
         for (int i = 1; i < days; i++) {
             if (day == i)
-                System.out.print("*" + i+"\t");
+                System.out.print("*" + i + "\t");
             else
                 System.out.print(i + "\t");
             if (week % 7 == 0)

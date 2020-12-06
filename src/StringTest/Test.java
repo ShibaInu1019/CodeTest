@@ -12,12 +12,12 @@ public class Test {
         Matcher m = p.matcher(str);
 
         //获取 #{} 中的内容
-        while (m.find()){
+        while (m.find()) {
             System.out.println(m.group(1));
         }
 
         //替换#{xxx}
-        str = str.replaceAll("#\\{[^}]+\\}","?");
+        str = str.replaceAll("#\\{[^}]+\\}", "?");
         System.out.println(str);
     }
 }

@@ -38,7 +38,7 @@ public class Test {
                 res += c;
             }
         }
-        return  res;
+        return res;
     }
 
     public static void main(String[] args) throws BadHanyuPinyinOutputFormatCombination {

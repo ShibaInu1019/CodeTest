@@ -63,9 +63,9 @@ public class Test {
         }
 
 
-        System.out.println("MD5加密结果："+encrypt(str,"MD5"));
-        System.out.println("SHA1加密结果："+encrypt(str,"SHA1"));
-        System.out.println("SHA-256加密结果："+encrypt(str,"SHA-256"));
-        System.out.println("SHA-512加密结果："+encrypt(str,"SHA-512"));
+        System.out.println("MD5加密结果：" + encrypt(str, "MD5"));
+        System.out.println("SHA1加密结果：" + encrypt(str, "SHA1"));
+        System.out.println("SHA-256加密结果：" + encrypt(str, "SHA-256"));
+        System.out.println("SHA-512加密结果：" + encrypt(str, "SHA-512"));
     }
 }

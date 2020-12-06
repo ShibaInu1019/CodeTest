@@ -22,7 +22,7 @@ public class AtomicIntegerFieldUpdaterDemo implements Runnable {
     }
 
     public static class Candidate {
-         volatile int score;
+        volatile int score;
     }
 
     public static void main(String[] args) throws InterruptedException {
